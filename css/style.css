@@ -1,0 +1,67 @@
+body {
+  background-color: rgb(216, 176, 160);
+  text-align: center;
+}
+
+img {
+  margin-left: 20px;
+  width: 300px;
+  align-self: center;
+}
+
+.entrada {
+  text-align: center;
+}
+
+.acoes {
+  float: left;
+  margin-left: 200px;
+  display: flex;
+  flex-direction: row;
+  width: 210px;
+  flex-wrap: wrap;
+}
+.btn-acao {
+  margin-top: 10px;
+  width: 150px;
+  align-items: flex-start;
+}
+.status {
+  align-items: flex-end;
+  margin-left: 20px;
+}
+
+.conversa {
+  display: block;
+  float: right;
+  margin-right: 200px;
+  width: 300px;
+}
+div#text {
+  height: 400px;
+  background-color: linen;
+  border-radius: 10px;
+  overflow: auto;
+}
+
+div#text h3 {
+  border-bottom: solid black;
+  margin: 3px;
+}
+
+input#mensagem {
+  margin: 5px;
+  width: 270px;
+}
+
+p.mensagem-usuario {
+  text-align: left;
+  margin: 2px 2px 2px 10px;
+  color: grey;
+}
+
+p.mensagem-gato {
+  text-align: right;
+  margin: 2px 10px 2px 2px;
+  color: chocolate;
+}

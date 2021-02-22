@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Gato Vitual</title>
+  </head>
+  <body>
+    <div class="principal">
+      <h1 class="titulo">Miau! Meu nome é</h1>
+      <img src="Imagens/empe.png" />
+      <div class="acoes">
+        <input
+          type="button"
+          value="Alimentar"
+          id="btn-alimentar"
+          class="btn-acao"
+        />
+        <p class="status" id="s-alimentar">Status</p>
+        <input type="button" value="Dar àgua" id="btn-agua" class="btn-acao" />
+        <p class="status" id="s-agua">Status</p>
+
+        <input
+          type="button"
+          value="Brincar"
+          id="btn-brincar"
+          class="btn-acao"
+        />
+        <p class="status" id="s-brincar">Status</p>
+
+        <input
+          type="button"
+          value="Fazer carinho"
+          id="btn-carinho"
+          class="btn-acao"
+        />
+        <p class="status" id="s-carinho">Status</p>
+
+        <input
+          type="button"
+          value="Acordar"
+          id="btn-acordar"
+          class="btn-acao"
+        />
+        <p class="status" id="s-acordar">Status</p>
+      </div>
+      <div class="conversa">
+        <div id="text"><h3>Fale com o gatinho</h3></div>
+        <input type="text" id="mensagem" />
+        <input type="button" value="falar" id="conversar" />
+      </div>
+    </div>
+    <script src="javascript/script2.js"></script>
+  </body>
+</html>
