@@ -126,3 +126,20 @@ document.getElementById("btn-brincar").addEventListener("click", function () {
   atualizaStatus(BRINQUEDOS, document.getElementById("s-brincar"));
   aviso(`Você brincou com ${NOMEDOGATO}.`);
 });
+document.getElementById("btn-carinho").addEventListener("click", function () {
+  const valorCarinho = Math.floor(Math.random() * 10 + 1);
+  const texto = document.getElementById("s-carinho");
+  if (valorCarinho < 3) {
+    aviso(`Você fez um carinho muito ruim em ${NOMEDOGATO}.`);
+    texto.innerText = String.fromCodePoint("0x1f63f");
+  } else if (valorCarinho < 6) {
+    aviso(`Você fez um carinho mais ou menos em ${NOMEDOGATO}`);
+    texto.innerText = String.fromCodePoint("0x1f63e");
+  } else if (valorCarinho <= 9) {
+    aviso(`Você fez um carinho bom em ${NOMEDOGATO}.`);
+    texto.innerText = String.fromCodePoint("0x1f638");
+  } else {
+    aviso(`Você fez O CARINHO PERFEITO em ${NOMEDOGATO}.`);
+    texto.innerText = String.fromCodePoint("0x1f63b");
+  }
+});
