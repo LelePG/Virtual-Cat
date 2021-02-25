@@ -15,7 +15,12 @@ inicializaStatus();
 //Falar com o gato
 document.getElementById("conversar").addEventListener("click", function () {
   let textoUsuario = document.getElementById("mensagem");
-  //console.log(textoUsuario);
+  //console.log(textoUsuario.value);
+  if (!textoUsuario.value) {
+    //se eu tiver um falsy value na string, saio do código
+    window.alert("Você não digitou nada no campo de texto.");
+    return;
+  }
   voceDiz(textoUsuario.value);
   const respostaGato = [
     "Miau.",
@@ -114,4 +119,8 @@ document.getElementById("btn-acordar").addEventListener("click", function () {
     imagem.src = "Imagens/dormindo.png";
     aviso(`${NOMEDOGATO} foi dormir.`);
   }
+});
+
+document.getElementById("limpar-chat").addEventListener("click", function () {
+  caixaTexto.innerHTML = `<h3>Fale com o gatinho</h3></div>`;
 });
