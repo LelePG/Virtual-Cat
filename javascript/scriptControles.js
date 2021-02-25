@@ -107,9 +107,11 @@ document.getElementById("btn-acordar").addEventListener("click", function () {
     texto.innerText = String.fromCodePoint(acordado);
     gatoDormindo = false;
     imagem.src = `Imagens/${elementoAleatorio(fotos)}.png`;
+    aviso(`${NOMEDOGATO} acordou.`);
   } else {
     texto.innerText = String.fromCodePoint(dormindo);
     gatoDormindo = true;
     imagem.src = "Imagens/dormindo.png";
+    aviso(`${NOMEDOGATO} foi dormir.`);
   }
 });
