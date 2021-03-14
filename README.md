@@ -16,7 +16,8 @@ Cada botão de interação conta com uma reação do gato à atividade realizada
 
 # Como utilizar este projeto?
 
-Faça o download deste repositório cloando-o ou baixando em formato _.zip_.
+Você pode acessar este projeto [clicando aqui](https://lelepg.github.io/Virtual-Cat/index.html).
+De maneira alternativa você também pode fazer o download deste repositório cloando-o ou baixando em formato _.zip_.
 Caso opte por baixar em _.zip_, descompacte o arquivo baixado e abra o arquivo **index.html** clicando duas vezes sobre ele. Isso abrirá a página inicial, onde o nome do gato deve ser escolhida. Depois de nomear o gato, clique em iniciar para ter acesso à página de interações.
 
 ### Tecnologias utilizadas
